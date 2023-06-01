@@ -2,10 +2,10 @@ import React from 'react';
 import { Image, StyleSheet, Dimensions, Text, SafeAreaView, View} from 'react-native';
 import topo from '../../assets/topo.png'
 import imageFarm from '../../assets/logo.png'
-
 const width = Dimensions.get('screen').width;
 
 export default function Basket() {
+
     return (
     <SafeAreaView>
         <Image source={topo} style={styles.topo} />
@@ -39,7 +39,7 @@ const styles = StyleSheet.create(
             width: '100%',
             position: 'absolute',
             textAlign: 'center',
-            fontSize: '16px',
+            fontSize: 16,
             lineHeight: 26,
             color: '#fff',
             fontWeight: 'bold',
@@ -48,12 +48,13 @@ const styles = StyleSheet.create(
         Basket : {
             paddingVertical: 8, 
             paddingHorizontal: 16,
+           
         },
         nameBasket: {
             color: '#464646',
             fontSize: 26,
             lineHeight: 42,
-            fontWeight: 'bold'
+            fontFamily:'Roboto700',
         },
         farm:{
             flexDirection: 'row',
@@ -67,6 +68,7 @@ const styles = StyleSheet.create(
             fontSize: 16,
             lineHeight: 26,
             marginLeft: 12,
+            fontFamily:'Roboto400',
         },
         descriptionBasket: {
             color: '#A3A3A3',
