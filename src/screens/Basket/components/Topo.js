@@ -4,11 +4,11 @@ const width = Dimensions.get('screen').width;
 
 import topo from '../../../../assets/topo.png';
 import TextBasket from '../../../components/TextBasket';
-export default function Topo() {
+export default function Topo({title}) {
     return (
         <>
             <Image source={topo} style={styles.topo} />
-            <TextBasket style={styles.title}>Detalhe da Cesta</TextBasket>
+            <TextBasket style={styles.title}>{title}</TextBasket>
         </>
     );
 }

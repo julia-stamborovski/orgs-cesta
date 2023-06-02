@@ -3,15 +3,15 @@ import { StyleSheet, SafeAreaView, View} from 'react-native';
 import Topo from './components/Topo';
 import Details from './components/Details';
 
-export default function Basket() {
+export default function Basket({topo, details}) {
 
     return (
     <SafeAreaView>
-        <Topo />
+        <Topo {...topo}/>
 
         <View style={styles.Basket}>
             
-        <Details />
+        <Details {...details}/>
           
         </View>
     </SafeAreaView>
