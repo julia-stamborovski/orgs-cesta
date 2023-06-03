@@ -3,6 +3,7 @@ import { StyleSheet, SafeAreaView, View} from 'react-native';
 import Topo from './components/Topo';
 import Details from './components/Details';
 
+
 export default function Basket({topo, details}) {
 
     return (
@@ -12,6 +13,7 @@ export default function Basket({topo, details}) {
         <View style={styles.Basket}>
             
         <Details {...details}/>
+       
           
         </View>
     </SafeAreaView>
