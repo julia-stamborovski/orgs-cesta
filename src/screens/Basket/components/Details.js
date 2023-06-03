@@ -1,8 +1,8 @@
 import React from 'react';
-import { Image, StyleSheet, View} from 'react-native';
+import { Image, StyleSheet, View , TouchableOpacity} from 'react-native';
 import TextBasket from '../../../components/TextBasket';
 
-export default function Details({name, logoFarm, nameFarm, description, price}) {
+export default function Details({name, logoFarm, nameFarm, description, price, buttonBuy}) {
     return (
         <>
         <TextBasket style={styles.nameBasket}>{name}</TextBasket>
@@ -14,6 +14,11 @@ export default function Details({name, logoFarm, nameFarm, description, price}) 
             <TextBasket style={styles.descriptionBasket}>
                 {description}</TextBasket>
             <TextBasket style={styles.priceBasket}>{price}</TextBasket>
+            
+            <TouchableOpacity style={styles.buttonBuy}>
+                <TextBasket style={styles.textButtonBuy}>{buttonBuy}</TextBasket>
+            </TouchableOpacity>
+            
         </>
     )
 }
@@ -50,4 +55,17 @@ const styles = StyleSheet.create({
             lineHeight: 42,
             marginTop: 8,
         },
+    buttonBuy: {
+        marginTop: 16,
+        backgroundColor: '#2A9F85',
+        paddingVertical: 16,
+        borderRadius: 6,
+    },
+    textButtonBuy: {
+        color: '#FFFFFF',
+        textAlign: 'center',
+        fontSize: 16,
+        lineHeight: 26,
+        fontWeight: 'bold',
+    }
 })
