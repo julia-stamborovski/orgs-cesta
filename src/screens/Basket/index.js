@@ -1,22 +1,22 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, View} from 'react-native';
+import { StyleSheet, ScrollView, View} from 'react-native';
 import Topo from './components/Topo';
 import Details from './components/Details';
+import Itens from './components/Itens';
 
-
-export default function Basket({topo, details}) {
+export default function Basket({topo, details, itens}) {
 
     return (
-    <SafeAreaView>
+    <ScrollView>
         <Topo {...topo}/>
 
         <View style={styles.Basket}>
             
         <Details {...details}/>
        
-          
+        <Itens {...itens} />
         </View>
-    </SafeAreaView>
+    </ScrollView>
     );
 }
 

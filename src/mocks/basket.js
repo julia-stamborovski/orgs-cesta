@@ -18,8 +18,8 @@ const basket = {
     },
     itens: {
         title: 'Itens da cesta',
-        list: [
-         {   
+        listItens: [
+        {   
             itemName: 'Tomate',
             image: tomate
         },
